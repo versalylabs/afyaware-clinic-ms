@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdfa" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#042f2e" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Squircle rounded background -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#bgGrad)" filter="url(#shadow)" />
+
+  <!-- Inner subtle border glow -->
+  <rect x="28" y="28" width="456" height="456" rx="108" fill="none" stroke="#5eead4" stroke-width="6" stroke-opacity="0.4" />
+
+  <!-- Stylized Medical Cross with soft rounded pill corners -->
+  <path d="M216 110 C216 96 228 84 242 84 L270 84 C284 84 296 96 296 110 L296 216 L402 216 C416 216 428 228 428 242 L428 270 C428 284 416 296 402 296 L296 296 L296 402 C296 416 284 428 270 428 L242 428 C228 428 216 416 216 402 L216 296 L110 296 C96 296 84 284 84 270 L84 242 C84 228 96 216 110 216 L216 216 Z" fill="url(#crossGrad)" filter="url(#shadow)" />
+
+  <!-- Dynamic ECG / Pulse Heartbeat Wave across the center of cross -->
+  <path d="M120 256 L180 256 L205 200 L235 320 L265 170 L290 300 L315 256 L392 256" fill="none" stroke="#0d9488" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
